@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="height-100">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Modulr</title>
+    <meta name="description" content="Framework Open Source for Development ERP´s"/>
+    <meta name="keywords" content="modulr,erp,framework,software,opensource,nodejs,mondoDB,sailsjs,angularjs"/>
+    <meta name="robots" content="index,follow,archive">
+    <meta name="author" content="Alfredo Barron"/>
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/icon/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="img/icon/smalltile.png"/>
+    <meta name="msapplication-square150x150logo" content="img/icon/mediumtile.png"/>
+    <meta name="msapplication-wide310x150logo" content="img/icon/widetile.png"/>
+    <meta name="msapplication-square310x310logo" content="img/icon/largetile.png"/>
+
+    <!-- Libs CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- Template CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,800&amp;subsetting=all' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700,300' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]> <script src="./js/html5shiv.js"></script> <script src="./js/respond.js"></script> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navigation" class="height-100">
+
+    <!-- Banner -->
+    <div id="banner">
+      <!-- Start Header -->
+      <div id="header">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Start Logo / Text -->
+              <a class="navbar-brand text-logo" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="170px" height="35px" viewBox="0 0 218 42" enable-background="new 0 0 218 42" xml:space="preserve">
+                  <g class="mdr-icon">
+                    <path fill="#FAAB4C" d="M40.433,19.072h17.324c0.559,0,1.011-0.452,1.011-1.01v-6.705c0-0.559-0.452-1.011-1.011-1.011H40.433c-0.557,0-1.01,0.452-1.01,1.011v6.705C39.423,18.62,39.876,19.072,40.433,19.072z"></path>
+                    <path fill="#FAAB4C" d="M19.102,19.072h17.323c0.559,0,1.01-0.452,1.01-1.01v-6.705c0-0.559-0.451-1.011-1.01-1.011H19.102c-0.559,0-1.011,0.452-1.011,1.011v6.705C18.091,18.62,18.543,19.072,19.102,19.072z"></path>
+                    <path fill="#FAAB4C" d="M3.831,19.072h11.418c0.558,0,1.01-0.452,1.01-1.01v-6.705c0-0.559-0.452-1.011-1.01-1.011H3.831c-0.559,0-1.01,0.452-1.01,1.011v6.705C2.821,18.62,3.272,19.072,3.831,19.072z"></path>
+                    <path fill="#FAAB4C" d="M57.758,31.232H40.434c-0.558,0-1.011,0.453-1.011,1.011v6.704c0,0.558,0.453,1.01,1.011,1.01h17.324c0.558,0,1.011-0.452,1.011-1.01v-6.704C58.769,31.685,58.315,31.232,57.758,31.232z"></path>
+                    <path fill="#FAAB4C" d="M36.425,31.232H19.102c-0.558,0-1.01,0.453-1.01,1.011v6.704c0,0.558,0.452,1.01,1.01,1.01h17.323c0.559,0,1.012-0.452,1.012-1.01v-6.704C37.437,31.685,36.983,31.232,36.425,31.232z"></path>
+                    <path fill="#FAAB4C" d="M15.249,31.232H3.831c-0.558,0-1.01,0.453-1.01,1.011v6.704c0,0.558,0.452,1.01,1.01,1.01h11.418c0.558,0,1.01-0.452,1.01-1.01v-6.704C16.259,31.685,15.807,31.232,15.249,31.232z"></path>
+                    <path fill="#FAAB4C" d="M21.155,29.556c0.558,0,1.01-0.452,1.01-1.01v-6.705c0-0.558-0.452-1.01-1.01-1.01H3.831c-0.559,0-1.01,0.452-1.01,1.01v6.705c0,0.558,0.451,1.01,1.01,1.01H21.155z"></path>
+                    <path fill="#FAAB4C" d="M25.296,20.832c-0.559,0-1.012,0.452-1.012,1.01v6.705c0,0.558,0.453,1.01,1.012,1.01h17.323c0.558,0,1.01-0.452,1.01-1.01v-6.705c0-0.558-0.452-1.01-1.01-1.01H25.296z"></path>
+                    <path fill="#FAAB4C" d="M57.757,20.832H46.339c-0.557,0-1.01,0.452-1.01,1.01v6.705c0,0.558,0.453,1.01,1.01,1.01h11.418c0.559,0,1.011-0.452,1.011-1.01v-6.705C58.768,21.284,58.315,20.832,57.757,20.832z"></path>
+                  </g>
+                  <g class="mdr-text">
+                    <path fill="#fff" d="M71.249,21.136c0-0.809,0.361-1.169,1.17-1.169h4.902v19.77h8.721v-19.77h4.998c0.787,0,1.17,0.382,1.17,1.169v18.601h8.623V18.023c0-4.592-2.279-6.921-6.777-6.921H69.354c-4.528,0-6.825,2.312-6.825,6.873v21.761h8.72V21.136z"></path>
+                    <path
+                      fill="#fff"
+                      d="M110.188,39.737h12.303c4.435,0,6.683-2.296,6.683-6.825V18.023c0-4.592-2.281-6.921-6.778-6.921h-12.351c-4.529,0-6.825,2.312-6.825,6.873v15.127C103.219,37.505,105.563,39.737,110.188,39.737z M112.034,29.657v-8.521c0-0.809,0.361-1.169,1.17-1.169h6.08c0.807,0,1.168,0.36,1.168,1.169v8.616c0,0.809-0.361,1.169-1.168,1.169h-6.08C112.405,30.921,112.034,30.52,112.034,29.657z"></path>
+                    <path
+                      fill="#fff"
+                      d="M138.383,39.737h19.032V2.821H148.6v8.281h-10.36c-4.528,0-6.825,2.312-6.825,6.873v15.127C131.414,37.505,133.759,39.737,138.383,39.737z M140.229,29.657v-8.521c0-0.809,0.36-1.169,1.17-1.169h7.2v10.955h-7.2C140.601,30.921,140.229,30.52,140.229,29.657z"></path>
+                    <path fill="#fff" d="M166.914,39.737h11.824c4.433,0,6.681-2.296,6.681-6.825V11.103H176.7v18.649c0,0.809-0.361,1.169-1.17,1.169h-5.6c-0.799,0-1.17-0.402-1.17-1.265V11.103h-8.816v22C159.944,37.505,162.29,39.737,166.914,39.737z"></path>
+                    <rect x="187.997" y="2.821" fill="#fff" width="8.814" height="36.916"></rect>
+                    <path fill="#fff" d="M206.31,11.103c-4.625,0-6.873,2.249-6.873,6.873v21.761h8.863V21.088c0-0.809,0.361-1.169,1.17-1.169h6.394v-8.816H206.31z"></path>
+                  </g>
+                </svg>
+              </a>
+              <!-- End Logo / Text -->
+            </div>
+            <!-- Start Navigation -->
+            <div class="navigation navbar-collapse collapse">
+              <ul class="nav navbar-nav menu-right">
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contribute">Contribute</a></li>
+                <li><a href="https://medium.com/@modulr_io" target="_blank">Blog</a></li>
+              </ul>
+            </div>
+            <!-- End Navigation  -->
+          </div>
+        </nav>
+      </div>
+      <!-- End Header -->
+      <div class="banner-content">
+        <div class="container">
+          <div class="row">
+            <!-- Start Header Text -->
+            <div class="col-md-10 col-sm-10 col-md-offset-1 text-center">
+              <h1>Open Source <strong>Framework</strong> for ERP´s Development</h1>
+              <div id="carousel-banner" class="carousel slide carousel-mod fade in" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p class="lead">modulr is free and open software for your company</p>
+                  </div>
+                  <div class="item">
+                    <p class="lead">made to measure software</p>
+                  </div>
+                  <div class="item">
+                    <p class="lead">Clone the repositoy in GitHub and free yourself</p>
+                  </div>
+                </div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-banner" data-slide-to="1"></li>
+                  <li data-target="#carousel-banner" data-slide-to="2"></li>
+                </ol>
+              </div>
+              <a href="http://ec2-52-90-181-247.compute-1.amazonaws.com:3000/" target="_blank" class="btn btn-transparent btn-big">Demo</a>
+            </div>
+
+
+
+
+            <!-- End Header Text -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Clients Logo -->
+    <div id="clients" class="padding40 bg-grey hidden-xs">
+      <div class="container">
+        <ul class="list-inline clients-logo text-center">
+          <li><img src="img/technologies/angular.png" alt="" title=""/></li>
+          <li><img src="img/technologies/sailsjs.png" alt="" title=""/></li>
+          <li><img src="img/technologies/nodejs.png" alt="" title=""/></li>
+          <li><img src="img/technologies/mongodb.png" alt="" title=""/></li>
+          <li><img src="img/technologies/bootstrap.png" alt="" title=""/></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Clients Logo -->
+
+    <!-- Intro -->
+    <section id="intro" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 headline">
+            <!-- <h2>modulr is designed with the <span class="blue"> most new</span> and <span class="blue">innovative</span> technologies</h2>
+            <p>It is the base for development any awesome project</p>-->
+            <h2>It is the <span class="blue">base</span> for <span class="blue">developing</span> any <span class="blue">project awesome</span></h2>
+            <p>It is designed with the most new and innovative technologies</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <img src="img/intro/realtime.png" class="img-responsive" alt="" title="">
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="features">
+              <i class="line-font blue icon-refresh"></i>
+              <h3>Real Time Aplication</h3>
+              <p>Modulr uses websockets to keep open conectios between client and server</p>
+            </div>
+            <div class="features">
+              <i class="line-font blue icon-arrow-left"></i>
+              <i class="line-font blue icon-arrow-right"></i>
+              <h3>Just One Programing Languaje</h3>
+              <p>Modulr uses javascript for the entire development enviroment</p>
+            </div>
+            <div class="features">
+              <i class="line-font blue icon-pie-chart"></i>
+              <h3>Multiple Data Base Management</h3>
+              <p>Modular work with multiple data base management. Is part of our freedom</p>
+            </div>
+          </div>
+        </div>
+        <hr class="separator60">
+        <!-- Separator -->
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Easy to Use</h2>
+            <p>Modulr is Designed to be easy, Implement and develop. your users will love it.</p>
+            <ul class="green-arrow">
+              <li>Fast learning</li>
+              <li>Attractive and intuitive interface inviting the user to stay in it</li>
+              <li>Improve and automates your processes</li>
+              <li>Help you to reduce costs and generate more revenue, all in less time!</li>
+            </ul>
+
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <img src="img/intro/easy.png" class="img-responsive" alt="" title="">
+          </div>
+        </div>
+        <hr class="separator60">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/intro/access.png" class="img-responsive" alt="" title="">
+          </div>
+          <div class="col-md-6">
+            <div class="margintop">
+              <h2>Access anytime and anywhere</h2>
+              <p>You can access from any device and/or any web browser and receive real-time notifications with only an Internet connection.</p>
+              <ul class="green-arrow">
+                <li>Responsive</li>
+                <li>Multi-platform</li>
+                <li>All information and files in your company centralized in one place</li>
+                <li>It is free all the time and without private licences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Intro -->
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section bg-blue white-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="headline">
+              <h2>Until now modulr</h2>
+              <p>It is composed of the following modules</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <!-- How It Works List -->
+            <ul class="steps-list">
+              <li data-target="#carousel" data-slide-to="0" class="active">
+                <span>1</span>
+                <h4>Login, Sign Up and Recovery passwords</h4>
+                <p>Register, login or recover your lost password</p>
+              </li>
+              <li data-target="#carousel" data-slide-to="1">
+                <span>2</span>
+                <h4>Users and Access control</h4>
+                <p>Control to add or delete users and grant permissions.</p>
+              </li>
+              <li data-target="#carousel" data-slide-to="2">
+                <span>3</span>
+                <h4>Log</h4>
+                <p>Who logged in, when and from where.</p>
+              </li>
+              <li data-target="#carousel" data-slide-to="3">
+                <span>4</span>
+                <h4>Profile</h4>
+                <p>Editing user profiles, personal and company information.</p>
+              </li>
+              <li data-target="#carousel" data-slide-to="4">
+                <span>5</span>
+                <h4>Chat</h4>
+                <p>Real-time chat between employees and departments.</p>
+              </li>
+            </ul>
+            <!-- End How It Works List -->
+          </div>
+          <div class="col-md-7">
+            <div class="carousel slide carousel-mod" data-ride="carousel" id="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/include/login.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="img/include/users.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="img/include/log.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="img/include/profile.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="img/include/chat.png" alt="">
+                </div>
+              </div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End How it Works -->
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="headline">
+              <h2>Features</h2>
+              <p>It is more than a simple system</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 features">
+            <i class="line-font blue icon-layers"></i>
+            <h3>Scalability</h3>
+            <p>Grow at your own pace. Implements modules that you company requires.</p>
+          </div>
+          <div class="col-md-4 col-sm-4 features">
+            <i class="line-font blue icon-magic-wand"></i>
+            <h3>Easy and adaptable</h3>
+            <p>Do your processes change? Customize modulr to your needs.</p>
+          </div>
+          <div class="col-md-4 col-sm-4 features">
+            <i class="line-font blue icon-notebook"></i>
+            <h3>Documentation</h3>
+            <p>free access to all documentation installation and use of modulr, collaborate, edit and share.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 features">
+            <i class="line-font blue icon-lock"></i>
+            <h3>Safety</h3>
+            <p>Access control, user permissions, transaction log and more.</p>
+          </div>
+          <div class="col-md-4 col-sm-4 features">
+            <i class="line-font blue icon-energy"></i>
+            <h3>Fast and Light</h3>
+            <p>Developed and optimized for any modern web browser.</p>
+          </div>
+          <div class="col-md-4 col-sm-4 features">
+            <i class="line-font blue icon-people"></i>
+            <h3>Community</h3>
+            <p>We have support by a worldwide community of developers that constantly bring contributions to the project.</p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <img src="img/device.png" class="img-responsive" alt="" title=""/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Features -->
+
+    <!-- Three Main Points -->
+    <section id="three-main" class="section bg-blue white-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="headline">
+              <h2>Your company does not adapt to modulr, modulr adapts to your company</h2>
+              <p>The advantage of being open source software is not having limits</p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="main-point">
+              <i class="line-font icon-puzzle"></i>
+              <h3>Add</h3>
+              <p>Add the modules you need as sales, finance, operations, human resources and more.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="main-point">
+              <i class="line-font icon-equalizer"></i>
+              <h3>Customize</h3>
+              <p>Easily customize the modules according to the needs of your company.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="main-point">
+              <i class="line-font icon-bulb"></i>
+              <h3>Make</h3>
+              <p>Create your own modules and shares with the community</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Three Main Points -->
+
+    <!-- Testimonials -->
+    <!-- <section id="testimonials" class="section bg-testimonial cover border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="headline">
+              <h2>Testimonials</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="carousel slide carousel-mod" data-ride="carousel" id="testimonial">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Testimonials -->
+
+    <!-- FAQ -->
+    <section id="project" class="section bg-grey  arrow-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="headline">
+              <h2>The Project </h2>
+              <p>A short description of their roots</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="faq-body">
+              <i class="line-font blue icon-question"></i>
+              <h4>What is modulr ?</h4>
+              <div class="answer">
+                <p><strong>It´s a Open Source Framework for ERP´s Development.</strong></p>
+                Open source products are just as feature-rich, innovative and dependable as their proprietary cousins.
+                <ul>
+                  <li>- Increased adaptability and visibility.</li>
+                  <li>- Easier integration with current ERP systems.</li>
+                  <li>- Customers enjoy a refreshing level of transparency.</li>
+                  <li>- Lower acquisitions costs.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-body">
+              <i class="line-font blue icon-question"></i>
+              <h4>Where it comes modular ?</h4>
+              <div class="answer">
+                <p><strong>Most of the software businesses use today is proprietary software</strong>, meaning it is the legal property of a vendor that makes the software available to others via a proprietary licensing agreement. In most cases, the vendor limits access to the underlying source code.</p>
+                <p>modulr born from the need to create a free ERP system targeted to companies who do not have access to current systems available on the market due to the high costs</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="faq-body">
+              <i class="line-font blue icon-question"></i>
+              <h4>Why modulr ?</h4>
+              <div class="answer">
+                <p><strong>The Open Source model</strong></p>
+                <p>Open source software solutions offer great opportunities for cost reduction and quality improvement, especially for small and medium enterprises that typically have to address major difficulties due to the limited resources available for selecting and adopting a new software system.</p>
+              </div>
+            </div>
+            <div class="faq-body">
+              <i class="line-font blue icon-question"></i>
+              <h4>Where it goes modular ?</h4>
+              <div class="answer">
+                <p><strong>Our goal is to create a high quality solution that help enterprises to improve competitivity and reduce the digital breach</strong></p>
+                <p>the quality of an open source project depends on its maturity and decomposes it into six elements: product software, support, documentation, training, product integration and professional services, and we are working very hard in every aspect.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End FAQ -->
+
+    <!-- Call To Action -->
+    <section id="contribute" class="section bg-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center white-text">
+            <div class="headline">
+              <h2>Be part of this project</strong></h2>
+              <p class="subline">¡Join the community, download, collaborate and share code!</p>
+            </div>
+            <a href="https://github.com/modulr/modulr" target="_blank" class="btn btn-transparent btn-big"><i class="fa fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Call To Action -->
+
+    <!-- Footer Top -->
+    <section class="footer footer-top">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Intro  -->
+          <div class="col-md-4">
+            <h3>Modulr </h3>
+            <p>Open Source Framework for ERP´s Development</p>
+            <p>Designed to meet all the needs of your company.</p>
+          </div>
+          <!-- End Footer Intro  -->
+          <!-- Contact Details  -->
+          <div class="col-md-3">
+            <div class="contact-info">
+              <h3>Reach Us</h3>
+              <ul class="contact-list">
+                <li><i class="icon-envelope-open"></i><a href="mailto:megusta@modulr.io">megusta@modulr.io</a></li>
+                <li><i class="icon-directions"></i>San Pedro Garza García, N.L.</li>
+                <li><i class="icon-call-in"></i>(811) 25 41099</li>
+                <li><i class="icon-directions"></i>Hgo. del Parral, Chihuahua.</li>
+                <li><i class="icon-call-in"></i>(627) 10 46861</li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Contact Details  -->
+          <!-- Quick Links -->
+          <div class="col-md-2">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+              <li><a href="https://github.com/modulr/modulr/archive/master.zip" target="_blank">Download</a></li>
+              <li><a href="https://github.com/modulr/modulr/wiki" target="_blank">Documentation</a></li>
+              <li><a href="components">Components</a></li>
+              <li><a href="https://medium.com/@modulr_io" target="_blank">Blog</a></li>
+              <li><a href="https://modulr.slack.com" target="_blank"><i class="fa fa-slack"></i> Slack</a></li>
+            </ul>
+          </div>
+          <!-- End Quick links -->
+          <!-- Social Links -->
+          <div class="col-sm-3">
+            <h3>Stay in Touch!</h3>
+            <p>Follow us on our social networks!</p>
+            <ul class="social">
+              <li><a href="https://github.com/modulr" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+              <li><a href="https://twitter.com/modulr_io" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/modulr-erp" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+              <li><a href="https://plus.google.com/104212935400396761655" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a></li>
+            </ul>
+          </div>
+          <!--End Social Links  -->
+        </div>
+      </div>
+    </section>
+    <!-- End Footer Top -->
+
+    <!-- Footer Bottom -->
+    <footer class="footer footer-sub">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <p>The MIT License (MIT) Copyright © 2016 Modulr</p>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <p class="copyright">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="130px" height="35px" viewBox="0 0 218 42" enable-background="new 0 0 218 42" xml:space="preserve">
+              <g class="mdr-icon">
+                <path fill="#FAAB4C" d="M40.433,19.072h17.324c0.559,0,1.011-0.452,1.011-1.01v-6.705c0-0.559-0.452-1.011-1.011-1.011H40.433
+                c-0.557,0-1.01,0.452-1.01,1.011v6.705C39.423,18.62,39.876,19.072,40.433,19.072z"/>
+                <path fill="#FAAB4C" d="M19.102,19.072h17.323c0.559,0,1.01-0.452,1.01-1.01v-6.705c0-0.559-0.451-1.011-1.01-1.011H19.102
+                c-0.559,0-1.011,0.452-1.011,1.011v6.705C18.091,18.62,18.543,19.072,19.102,19.072z"/>
+                <path fill="#FAAB4C" d="M3.831,19.072h11.418c0.558,0,1.01-0.452,1.01-1.01v-6.705c0-0.559-0.452-1.011-1.01-1.011H3.831
+                c-0.559,0-1.01,0.452-1.01,1.011v6.705C2.821,18.62,3.272,19.072,3.831,19.072z"/>
+                <path fill="#FAAB4C" d="M57.758,31.232H40.434c-0.558,0-1.011,0.453-1.011,1.011v6.704c0,0.558,0.453,1.01,1.011,1.01h17.324
+                c0.558,0,1.011-0.452,1.011-1.01v-6.704C58.769,31.685,58.315,31.232,57.758,31.232z"/>
+                <path fill="#FAAB4C" d="M36.425,31.232H19.102c-0.558,0-1.01,0.453-1.01,1.011v6.704c0,0.558,0.452,1.01,1.01,1.01h17.323
+                c0.559,0,1.012-0.452,1.012-1.01v-6.704C37.437,31.685,36.983,31.232,36.425,31.232z"/>
+                <path fill="#FAAB4C" d="M15.249,31.232H3.831c-0.558,0-1.01,0.453-1.01,1.011v6.704c0,0.558,0.452,1.01,1.01,1.01h11.418
+                c0.558,0,1.01-0.452,1.01-1.01v-6.704C16.259,31.685,15.807,31.232,15.249,31.232z"/>
+                <path fill="#FAAB4C" d="M21.155,29.556c0.558,0,1.01-0.452,1.01-1.01v-6.705c0-0.558-0.452-1.01-1.01-1.01H3.831
+                c-0.559,0-1.01,0.452-1.01,1.01v6.705c0,0.558,0.451,1.01,1.01,1.01H21.155z"/>
+                <path fill="#FAAB4C" d="M25.296,20.832c-0.559,0-1.012,0.452-1.012,1.01v6.705c0,0.558,0.453,1.01,1.012,1.01h17.323
+                c0.558,0,1.01-0.452,1.01-1.01v-6.705c0-0.558-0.452-1.01-1.01-1.01H25.296z"/>
+                <path fill="#FAAB4C" d="M57.757,20.832H46.339c-0.557,0-1.01,0.452-1.01,1.01v6.705c0,0.558,0.453,1.01,1.01,1.01h11.418
+                c0.559,0,1.011-0.452,1.011-1.01v-6.705C58.768,21.284,58.315,20.832,57.757,20.832z"/>
+              </g>
+              <g class="mdr-text">
+                <path fill="#fff" d="M71.249,21.136c0-0.809,0.361-1.169,1.17-1.169h4.902v19.77h8.721v-19.77h4.998
+                c0.787,0,1.17,0.382,1.17,1.169v18.601h8.623V18.023c0-4.592-2.279-6.921-6.777-6.921H69.354c-4.528,0-6.825,2.312-6.825,6.873
+                v21.761h8.72V21.136z"/>
+                <path fill="#fff" d="M110.188,39.737h12.303c4.435,0,6.683-2.296,6.683-6.825V18.023c0-4.592-2.281-6.921-6.778-6.921h-12.351
+                c-4.529,0-6.825,2.312-6.825,6.873v15.127C103.219,37.505,105.563,39.737,110.188,39.737z M112.034,29.657v-8.521
+                c0-0.809,0.361-1.169,1.17-1.169h6.08c0.807,0,1.168,0.36,1.168,1.169v8.616c0,0.809-0.361,1.169-1.168,1.169h-6.08
+                C112.405,30.921,112.034,30.52,112.034,29.657z"/>
+                <path fill="#fff" d="M138.383,39.737h19.032V2.821H148.6v8.281h-10.36c-4.528,0-6.825,2.312-6.825,6.873v15.127
+                C131.414,37.505,133.759,39.737,138.383,39.737z M140.229,29.657v-8.521c0-0.809,0.36-1.169,1.17-1.169h7.2v10.955h-7.2
+                C140.601,30.921,140.229,30.52,140.229,29.657z"/>
+                <path fill="#fff" d="M166.914,39.737h11.824c4.433,0,6.681-2.296,6.681-6.825V11.103H176.7v18.649
+                c0,0.809-0.361,1.169-1.17,1.169h-5.6c-0.799,0-1.17-0.402-1.17-1.265V11.103h-8.816v22
+                C159.944,37.505,162.29,39.737,166.914,39.737z"/>
+                <rect x="187.997" y="2.821" fill="#fff" width="8.814" height="36.916"/>
+                <path fill="#fff" d="M206.31,11.103c-4.625,0-6.873,2.249-6.873,6.873v21.761h8.863V21.088c0-0.809,0.361-1.169,1.17-1.169
+                h6.394v-8.816H206.31z"/>
+              </g>
+            </svg>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Bottom -->
+
+    <!-- Start Js Files -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <!--jQuery is a Javascript library that greatly reduces the amount of code that you must write.-->
+    <script type="text/javascript">
+      window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!--Packed with many functionalies such as carousel slider, responsivity, tabs, drop downs, buttons, and many other features-->
+    <script src="js/modernizr.min.js" type="text/javascript"></script>
+    <!--Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.-->
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <!-- Script for Lightbox Image  -->
+    <script src="js/custom.js" type="text/javascript"></script>
+    <!-- Script File containing all customizations  -->
+    <script src="js/twitterFetcher.js"></script>
+    <!-- End Js Files  -->
+    <script>
+    var config = {
+      "id": '705270386905055233',
+      "maxTweets": 3,
+      "showRetweet": false,
+      "dataOnly": true,
+      "customCallback": populateTpl
+    };
+    twitterFetcher.fetch(config);
+    function populateTpl(tweets){
+      var element = document.getElementById('testimonial');
+      var html = '<div class="carousel-inner">';
+      var indicators = '<ol class="carousel-indicators">';
+      for (var i = 0, lgth = tweets.length; i < lgth ; i++) {
+        var tweetObject = tweets[i];
+        if(i == 0){active = 'active'}else{active = ''};
+        html += '<div class="item '+active+'"><div class="testimonial-inner">'
+          + '<p>' + tweetObject.author + '</p>'
+          + '<p>' + tweetObject.tweet + '</p>'
+        + '</div></div>';
+        indicators += '<li data-target="#testimonial" data-slide-to="'+i+'" class="'+active+'"></li>';
+      }
+      indicators += '</ol>';
+      html += '</div>';
+      element.innerHTML = html + indicators;
+    }
+    </script>
+
+
+    <!-- Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56460444-3', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

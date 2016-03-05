@@ -1,0 +1,19 @@
+{
+  "name": "modulr_website",
+  "version": "1.0.0",
+  "authors": [
+    "Alfredo Barron <alfredobarronc@gmail.com>"
+  ],
+  "description": "modulr website",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

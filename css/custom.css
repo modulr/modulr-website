@@ -1,0 +1,121 @@
+.height-100 {
+  height: 100%;
+}
+
+.blue {
+  color: #FAAB4C
+}
+.btn:hover,
+.btn:focus {
+  background-color:#FAAB4C;
+  border-color: #FAAB4C;
+}
+
+.btn-transparent {
+  background-color: #FAAB4C;
+  border: 2px solid #FFF;
+  color: #fff;
+}
+
+
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.53);
+}
+.scroll-fixed-navbar {
+  background-color: #fff;
+}
+.scroll-fixed-navbar.navbar-inverse .navbar-brand svg path,
+.scroll-fixed-navbar.navbar-inverse .navbar-brand svg rect {
+  fill: #545454;
+}
+.scroll-fixed-navbar .navbar-nav > li > a,
+.scroll-fixed-navbar .navbar-nav > li:not(.active) > a {color: #545454;}
+.scroll-fixed-navbar .navbar-nav > li.active > a,
+.scroll-fixed-navbar .navbar-nav > li.active > a:hover,
+.scroll-fixed-navbar .navbar-nav > li.active > a:focus,
+.scroll-fixed-navbar .navbar-nav > li.active > a:active {color: #FAAB4C; }
+
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;
+  border: none;
+}
+.scroll-fixed-navbar .navbar-toggle .icon-bar {
+  background-color: #545454;
+}
+
+
+#banner {
+  background-image: url(../img/bg-banner.jpg);
+}
+.banner-content {
+  height: 100%;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -webkit-align-items:center;
+  align-items:center;
+}
+.banner-content h1 {
+  border-bottom: none;
+}
+.banner-content .lead {
+  margin-top: 20px;
+  color: fff;
+  font-weight: normal;
+}
+.banner-content .carousel-indicators {
+  margin-top: 0;
+}
+.banner-content .carousel-indicators li {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.banner-content .carousel-indicators li.active {
+  background-color: #fff;
+}
+.banner-content .btn {
+  margin-top: 10px;
+}
+
+
+.features .icon-arrow-left {
+  margin-right: 0;
+}
+
+
+#how-it-works .carousel-indicators li {
+  background-color: #fff;
+}
+#how-it-works .carousel-indicators li.active {
+  background-color: #1a1a1a;
+}
+
+
+#contribute .headline p {
+  color: #fff;
+}
+
+
+.bg-footer {
+  background-image: url(../img/bg-footer.jpg);
+}
+
+
+.footer .social li {
+  background: #242424;
+}
+.footer .social li:hover {
+  background: #31373a;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .navbar-inverse .navbar-nav > li > a {color: #fff;}
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus,
+  .navbar-inverse .navbar-nav > li > a:hover { color: #FAAB4C;}
+}
