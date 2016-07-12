@@ -5,21 +5,21 @@
 .blue {
   color: #FAAB4C
 }
-.btn:hover,
-.btn:focus {
+
+.btn-transparent {
+  background-color: transparent;
+  border: 2px solid #FFF;
+  color: #fff;
+}
+.btn-transparent:hover,
+.btn-transparent:focus {
   background-color:#FAAB4C;
   border-color: #FAAB4C;
 }
 
-.btn-transparent {
-  background-color: #FAAB4C;
-  border: 2px solid #FFF;
-  color: #fff;
-}
-
 
 .navbar-inverse {
-  background-color: rgba(0, 0, 0, 0.53);
+  background-color: transparent;
 }
 .scroll-fixed-navbar {
   background-color: #fff;
@@ -59,6 +59,7 @@
   align-items:center;
 }
 .banner-content h1 {
+  font-size: 5em;
   border-bottom: none;
 }
 .banner-content .lead {
@@ -80,19 +81,32 @@
   margin-top: 10px;
 }
 
+.green-arrow li {
+  font-size: 16px;
 
-.features .icon-arrow-left {
-  margin-right: 0;
+}
+
+.steps-list li {
+  cursor: pointer;
+}
+.steps-list li:hover span {
+  background-color: #2b2b2b;
+
+}
+.steps-list li.active span {
+  background-color: #FAAB4C;
+  color: #1a1a1a;
+}
+.steps-list li.active:hover span {
+  background-color: #FAAB4C;
+  color: #1a1a1a;
 }
 
 
-#how-it-works .carousel-indicators li {
-  background-color: #fff;
+.clients-logo img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
-#how-it-works .carousel-indicators li.active {
-  background-color: #1a1a1a;
-}
-
 
 #contribute .headline p {
   color: #fff;
@@ -118,4 +132,5 @@
   .navbar-inverse .navbar-nav > .active > a:hover,
   .navbar-inverse .navbar-nav > .active > a:focus,
   .navbar-inverse .navbar-nav > li > a:hover { color: #FAAB4C;}
+  .video-container {margin-top: 70px;}
 }
