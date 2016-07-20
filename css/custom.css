@@ -134,3 +134,16 @@
   .navbar-inverse .navbar-nav > li > a:hover { color: #FAAB4C;}
   .video-container {margin-top: 70px;}
 }
+
+.flexcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flexcontainer .flex-div {
+  flex: 0 0 auto;
+}
+
+
