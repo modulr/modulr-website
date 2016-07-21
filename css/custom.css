@@ -141,9 +141,3 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.flexcontainer .flex-div {
-  flex: 0 0 auto;
-}
-
-
