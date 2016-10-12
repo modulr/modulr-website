@@ -64,21 +64,12 @@
 }
 .banner-content .lead {
   margin-top: 20px;
+  margin-bottom: 30px;
   color: fff;
   font-weight: normal;
 }
-.banner-content .carousel-indicators {
-  margin-top: 0;
-}
-.banner-content .carousel-indicators li {
-  border: 1px solid #fff;
-  background-color: transparent;
-}
-.banner-content .carousel-indicators li.active {
-  background-color: #fff;
-}
 .banner-content .btn {
-  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .green-arrow li {
@@ -126,18 +117,57 @@
 }
 
 
-@media only screen and (max-width: 767px) {
+
+@media screen and (max-width: 992px) {
   .navbar-inverse .navbar-nav > li > a {color: #fff;}
   .navbar-inverse .navbar-nav > .active > a,
   .navbar-inverse .navbar-nav > .active > a:hover,
   .navbar-inverse .navbar-nav > .active > a:focus,
   .navbar-inverse .navbar-nav > li > a:hover { color: #FAAB4C;}
-  .video-container {margin-top: 70px;}
+
+  .banner-content {
+    height: 100%;
+    display:block;
+  }
+  .banner-content h1 {
+    font-size: 3em;
+  }
+  .banner-content .lead {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: fff;
+    font-weight: normal;
+  }
+  .banner-content .btn {
+    margin-bottom: 30px;
+  }
+  .carousel > div {
+    margin: auto;
+  }
 }
 
-.flexcontainer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+@media screen and (max-width: 768px) {
+  .navbar-inverse {
+    background-color: #fff;
+  }
+  .navbar-inverse .navbar-brand svg path,
+  .navbar-inverse .navbar-brand svg rect {
+    fill: #545454;
+  }
+  .navbar-nav > li > a,
+  .navbar-nav > li:not(.active) > a {color: #545454;}
+  .navbar-nav > li.active > a,
+  .navbar-nav > li.active > a:hover,
+  .navbar-nav > li.active > a:focus,
+  .navbar-nav > li.active > a:active {color: #FAAB4C; }
+
+  .navbar-inverse .navbar-toggle,
+  .navbar-inverse .navbar-toggle:hover,
+  .navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+    border: none;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: #545454 !important;
+  }
 }

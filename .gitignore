@@ -8,3 +8,5 @@ components/mdr-angular-select2
 
 node_modules
 resources
+
+*.DS_Store
