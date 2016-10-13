@@ -125,12 +125,9 @@
   .navbar-inverse .navbar-nav > .active > a:focus,
   .navbar-inverse .navbar-nav > li > a:hover { color: #FAAB4C;}
 
-  .banner-content {
-    height: 100%;
-    display:block;
-  }
+
   .banner-content h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
   .banner-content .lead {
     margin-top: 10px;
@@ -143,6 +140,12 @@
   }
   .carousel > div {
     margin: auto;
+  }
+  .col-xs-offset-1.col-md-5 h2, .col-xs-offset-1.col-md-4 .features{
+    margin-top: 0px;
+  }
+  .nopadding-bottom {
+    padding-bottom: 0px;
   }
 }
 
