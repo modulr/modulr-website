@@ -125,7 +125,6 @@
   .navbar-inverse .navbar-nav > .active > a:focus,
   .navbar-inverse .navbar-nav > li > a:hover { color: #FAAB4C;}
 
-
   .banner-content h1 {
     font-size: 4em;
   }
@@ -172,5 +171,9 @@
   }
   .navbar-toggle .icon-bar {
     background-color: #545454 !important;
+  }
+
+  .banner-content h1 {
+    font-size: 3em;
   }
 }
