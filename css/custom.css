@@ -21,6 +21,12 @@
 .navbar-inverse {
   background-color: transparent;
 }
+
+.navbar-nav .btn{
+  padding: 8px 10px;
+  margin: 6px 0 0 10px;
+}
+
 .scroll-fixed-navbar {
   background-color: #fff;
 }
@@ -34,6 +40,11 @@
 .scroll-fixed-navbar .navbar-nav > li.active > a:hover,
 .scroll-fixed-navbar .navbar-nav > li.active > a:focus,
 .scroll-fixed-navbar .navbar-nav > li.active > a:active {color: #FAAB4C; }
+
+
+.scroll-fixed-navbar .navbar-nav .btn{
+  border-color: #FAAB4C;
+}
 
 .navbar-inverse .navbar-toggle,
 .navbar-inverse .navbar-toggle:hover,
@@ -162,6 +173,10 @@
   .navbar-nav > li.active > a:hover,
   .navbar-nav > li.active > a:focus,
   .navbar-nav > li.active > a:active {color: #FAAB4C; }
+
+  .navbar-nav .btn{
+    margin-bottom: 10px;
+  }
 
   .navbar-inverse .navbar-toggle,
   .navbar-inverse .navbar-toggle:hover,
