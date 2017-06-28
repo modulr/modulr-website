@@ -57,8 +57,11 @@
 }
 
 
-#banner {
+.banner {
   background-image: url(../img/bg-banner.jpg);
+}
+.banner-dev {
+  background-image: url(../img/bg-banner-dev.jpg);
 }
 .banner-content {
   height: 100%;
@@ -88,6 +91,11 @@
 
 }
 
+.features a i{
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
 .steps-list li {
   cursor: pointer;
 }
@@ -105,7 +113,7 @@
 }
 
 
-.clients-logo img {
+.logos img {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
@@ -117,6 +125,10 @@
 
 .bg-footer {
   background-image: url(../img/bg-footer.jpg);
+}
+
+.bg-footer-dev {
+  background-image: url(../img/bg-footer-dev.jpg);
 }
 
 

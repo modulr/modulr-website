@@ -1,12 +1,1 @@
-.idea/
-
-bower_components
-
-components/mdr-angular-datepicker
-components/mdr-angular-file
-components/mdr-angular-select2
-
-node_modules
-resources
-
 *.DS_Store
