@@ -1,9 +1,9 @@
 // --------------------------------------------------------
 // Pretty Photo for Lightbox Image
 // --------------------------------------------------------
-$(document).ready(function() {
+//$(document).ready(function() {
     // $("a[data-gal^='prettyPhoto']").prettyPhoto();
-});
+//});
 
 // --------------------------------------------------------
 //	Navigation Bar
@@ -28,11 +28,19 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
     }, 1000);
 });
 
-$('#carousel').on('slid.bs.carousel', function (event) {
-    var nextactiveslide = $(event.relatedTarget).index();
-    var $btns = $('.steps-list');
-    var $active = $btns.find("[data-slide-to='" + nextactiveslide + "']");
-    $btns.find('li').removeClass('active');
-    $active.addClass('active');
+// $('#carousel').on('slid.bs.carousel', function (event) {
+//     var nextactiveslide = $(event.relatedTarget).index();
+//     var $btns = $('.steps-list');
+//     var $active = $btns.find("[data-slide-to='" + nextactiveslide + "']");
+//     $btns.find('li').removeClass('active');
+//     $active.addClass('active');
+//
+// });
 
+$(".carousel").swipe({
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+  },
+  allowPageScroll:"vertical"
 });
