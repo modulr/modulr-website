@@ -100,8 +100,22 @@
   margin-right: 10px;
 }
 
+#pricing img {
+  display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+#pricing h3{
+  color: #333;
+}
+
 #contribute .headline p {
   color: #fff;
+}
+
+#clients img {
+    width: 70px;
+    height: 70px;
 }
 
 
