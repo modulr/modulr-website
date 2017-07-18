@@ -27,6 +27,12 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
         scrollTop: $(this.hash).offset().top
     }, 1000);
 });
+$(".banner-content a[href^='#']").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(this.hash).offset().top
+    }, 1000);
+});
 
 // $('#carousel').on('slid.bs.carousel', function (event) {
 //     var nextactiveslide = $(event.relatedTarget).index();
