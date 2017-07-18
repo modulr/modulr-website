@@ -107,7 +107,19 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#modules">Modules</a></li>
                 <li><a href="https://medium.com/@modulr_io" target="_blank">Blog</a></li>
-                <li><a class="btn btn-transparent" href="http://demo.modulr.io:3000" target="_blank">Demo</a></li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Demo
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://demo.modulr.io:3000" target="_blank">Version 1</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://app.modulr.io" target="_blank">Version 2</a></li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
             </div>
             <!-- End Navigation  -->
@@ -149,11 +161,10 @@
     <div id="clients" class="padding40 bg-grey hidden-xs">
       <div class="container">
         <ul class="list-inline clients-logo text-center">
-          <li><img class="img-responsive" src="img/technologies/Javascript.jpg" alt=""></li>
           <li><img class="img-responsive" src="img/technologies/Node.jpg" alt=""></li>
+          <li><img class="img-responsive" src="img/technologies/Javascript.jpg" alt=""></li>
           <li><img class="img-responsive" src="img/technologies/php.jpg" alt=""></li>
-          <li><img class="img-responsive" src="img/technologies/html5.jpg" alt=""></li>
-          <li><img class="img-responsive" src="img/technologies/css3.jpg" alt=""></li>
+          <li><img class="img-responsive" src="img/technologies/Bootstrap.jpg" alt=""></li>
           <li><img class="img-responsive" src="img/technologies/Sass.jpg" alt=""></li>
         </ul>
       </div>
@@ -200,7 +211,7 @@
                 <div class="col-lg-12">
                     <div class="headline">
                         <h2>Versions</h2>
-                        <p>We have some versions, we working to more</p>
+                        <p>We have some versions, we are working to free more</p>
                     </div>
                 </div>
             </div>
@@ -208,7 +219,8 @@
                 <div class="col-md-4 col-sm-4 col-sm-offset-2">
                     <div class="panel price-plan">
                         <div>
-                            <h3><sup>Sails, Angularjs & MongoDb</sup></h3><!-- Price -->
+                            <h3>v1</h3>
+                            <h3><sup>Sails, Angularjs & MongoDB</sup></h3><!-- Price -->
                         </div>
                         <ul class="list-group"><!-- Package Features -->
                             <li class="list-group-item text-center">
@@ -226,6 +238,7 @@
                 <div class="col-md-4 col-sm-4 col-offset-sm-2">
                     <div class="panel price-plan">
                         <div>
+                            <h3>v2</h3>
                             <h3><sup>Laravel, Vuejs 2 & MySql</sup></h3><!-- Price -->
                         </div>
                         <ul class="list-group">
@@ -260,7 +273,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-bell"></i>
-              <h3>Notifications</h3>
+              <h3>Notifications <small class="pull-right">v2</small></h3>
               <p><strong>Manage your files and share it</strong></p>
               <p>Avoid disasters, keep your files in one place, you can manager files, media and share information, everything whitout leaving the system</p>
             </div>
@@ -268,7 +281,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-folder-alt"></i>
-              <h3>Files</h3>
+              <h3>Files <small class="pull-right">v1, v2</small></h3>
               <p><strong>Manage your files and share it</strong></p>
               <p>Avoid disasters, keep your files in one place, you can manager files, media and share information, everything whitout leaving the system</p>
             </div>
@@ -276,7 +289,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-fire"></i>
-              <h3>News</h3>
+              <h3>News <small class="pull-right">v2</small></h3>
               <p><strong>Manage your files and share it</strong></p>
               <p>Avoid disasters, keep your files in one place, you can manager files, media and share information, everything whitout leaving the system</p>
             </div>
@@ -286,7 +299,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-list"></i>
-              <h3>Tasks</h3>
+              <h3>Tasks <small class="pull-right">v2</small></h3>
               <p><strong>Manage your files and share it</strong></p>
               <p>Avoid disasters, keep your files in one place, you can manager files, media and share information, everything whitout leaving the system</p>
             </div>
@@ -294,7 +307,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-notebook"></i>
-              <h3>Contacts</h3>
+              <h3>Contacts <small class="pull-right">v2</small></h3>
               <p><strong>Manage your files and share it</strong></p>
               <p>Avoid disasters, keep your files in one place, you can manager files, media and share information, everything whitout leaving the system</p>
             </div>
@@ -302,7 +315,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-user"></i>
-              <h3>Profile</h3>
+              <h3>Profile <small class="pull-right">v1</small></h3>
               <p><strong>Editing user profiles, personal and company information</strong></p>
               <p>Be unique, here you can edit and add personal information, where to contact or your workplace</p>
             </div>
@@ -312,7 +325,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-bubbles"></i>
-              <h3>Chat</h3>
+              <h3>Chat <small class="pull-right">v1</small></h3>
               <p><strong>Real-time chat between employees and departments</strong></p>
               <p>Keep in contact, everybody can chat to someone in real time, saving time and optimizing communication</p>
             </div>
@@ -320,7 +333,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-key"></i>
-              <h3>Access & Users</h3>
+              <h3>Access & Users <small class="pull-right">v1</small></h3>
               <p><strong>Access control to users and permissions</strong></p>
               <p>Calm down, everything is under control. You can grant or revoke permissions for accesing to a module</p>
             </div>
@@ -328,7 +341,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-chart"></i>
-              <h3>Logging Stats</h3>
+              <h3>Logging Stats <small class="pull-right">v1</small></h3>
               <p><strong>Who logged in, when and from where</strong></p>
               <p>Be safe, in this module you can monitor the logins of the users,
                 where and when, if anything it's not normal you will know it</p>
@@ -339,7 +352,7 @@
           <div class="col-md-4 col-sm-4 features">
             <div class="answer">
               <i class="line-font blue icon-lock"></i>
-              <h3>Authentication</h3>
+              <h3>Authentication <small class="pull-right">v1, v2</small></h3>
               <p><strong>Sign Up, login or recover your lost password</strong></p>
               <p>Your users can register, login and recover their password when they want.
                 We use the best password recovery option to make it easy and save time for you.</p> <!-- Feature Text -->
@@ -355,11 +368,12 @@
             </div>
           </div><!-- End Feature -->
           <div class="col-md-4 col-sm-4 features">
-            <div class="answer">
+            <div class="answer orange">
               <i class="line-font blue icon-wrench"></i>
               <h3>Create your module</h3>
               <p><strong>Create your module and collaborate with us</strong></p>
-              <p>You are the important piece here, you can make real your ideas and share wit us and the community we want your talent, don't think it any more <a href="https://github.com/modulr" target="_blank">make it real</a></p>
+              <p>You are the important piece here, you can make real your ideas and share wit us and the community we want your talent, don't think it any more</p>
+              <a class="btn btn-default" href="https://github.com/modulr" target="_blank">make it real</a>
             </div>
           </div>
         </div>
