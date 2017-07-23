@@ -101,6 +101,14 @@
   margin-right: 10px;
 }
 
+.price-plan h3:first-child {
+  margin: 30px;
+}
+
+.list-group-item a {
+    margin-bottom: 5px;
+}
+
 #pricing img {
   display: inline-block;
     width: 70px;
@@ -118,7 +126,9 @@
     width: 70px;
     height: 70px;
 }
-
+.answer .gray{
+  color: inherit;
+}
 .answer.orange {
     border-color: #FAAB4C;
 }
@@ -138,6 +148,16 @@
 }
 .footer .social li:hover {
   background: #31373a;
+}
+
+
+.aligned-row {
+  display: flex;
+  flex-flow: row wrap;
+
+  &::before {
+    display: block;
+  }
 }
 
 
