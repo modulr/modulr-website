@@ -126,9 +126,6 @@
     width: 70px;
     height: 70px;
 }
-.answer .gray{
-  color: inherit;
-}
 .answer.orange {
     border-color: #FAAB4C;
 }
