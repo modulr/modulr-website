@@ -231,4 +231,12 @@
   .banner-content .lead {
     width: 100%;
   }
+
+  .aligned-row {
+    display: block;
+  }
+
+  .features {
+    margin-bottom: 0;
+  }
 }
